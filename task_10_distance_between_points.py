@@ -1,15 +1,7 @@
 # Найти расстояние между двумя точками пространства
+
 import math
 import random
-
-# def is_number():
-#     while True:
-#         try:
-#             console_input = int(input("Enter a quadrant: "))
-#             return int(console_input)
-#         except ValueError:
-#             print("It is not a valid number.")
-
 
 xa = random.randrange(-10, 11)
 ya = random.randrange(-10, 11)
