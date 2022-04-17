@@ -2,7 +2,7 @@
 # для всех значений предикат
 
 def tru_statement(x, y, z):
-        print(f"¬({x} ⋁ {y} ⋁ {z}) = ¬{x} ⋀ ¬{y} ⋀ ¬{z} is {bool((not (x or y or z)) == (not x and not y and not z))}")
+    print(f"¬({x} ⋁ {y} ⋁ {z}) = ¬{x} ⋀ ¬{y} ⋀ ¬{z} is {(not (x or y or z)) == (not x and not y and not z)}")
 
 
 tru_statement(0, 0, 0)
