@@ -8,6 +8,3 @@ for i in range(1, N + 1):
     dictionary[i] = 3 * i + 1
 
 print(dictionary)
-
-# for i in range(1, N + 1):
-#     print((3*i + 1), end=', ')
