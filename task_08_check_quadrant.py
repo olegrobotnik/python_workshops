@@ -16,15 +16,15 @@ x, y = is_number()
 
 if x == 0 and y == 0:
     print("The point is at the origin.")
-if (x > 0 or x < 0) and y == 0:
+elif (x > 0 or x < 0) and y == 0:
     print("The point is on the x-axis.")
-if x == 0 and (y > 0 or y < 0):
+elif x == 0 and (y > 0 or y < 0):
     print("The point is on the y-axis.")
-if x > 0 < y:
+elif x > 0 < y:
     print('The point is in I quadrant.')
-if x < 0 < y:
+elif x < 0 < y:
     print('The point is in II quadrant.')
-if x < 0 > y:
+elif x < 0 > y:
     print('The point is in III quadrant.')
-if x > 0 > y:
+elif x > 0 > y:
     print('The point is in IV quadrant.')
