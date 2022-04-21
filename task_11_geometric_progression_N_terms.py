@@ -3,8 +3,13 @@
 
 N = abs(int(input('Enter a number of terms: ')))
 
-for i in range(0, N + 1):
-    if i < N:
-        print((-3) ** i, end=', ')
-    else:
-        print((-3) ** i, end=', ...')
+sec_list = []
+for i in range(N):
+    sec_list.append((-3) ** i)
+    print(f'\t{sec_list[i]}', end=' ')
+
+# for i in range(0, N + 1):
+#     if i < N:
+#         print((-3) ** i, end=', ')
+#     else:
+#         print((-3) ** i, end=', ...')
