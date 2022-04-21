@@ -20,6 +20,17 @@ for i in substr_list:
     print(f'{i} found {count} times.')
 
 
+# # Пользователь задаёт две строки. Определить количество вхождений одной строки в другой.
+#
+# # str1= input('First string: ')
+# # str2= input('Second string: ')
+#
+# str1 = 'Python free 777 $$$ python free python python python $$$ python'
+# str2 = 'python free new $$$'
+#
+# str_list = str1.lower().split()
+# substr_list = str2.lower().split()
+#
 # counter = {}
 # for substr_element in substr_list:
 #     substr = substr_element
