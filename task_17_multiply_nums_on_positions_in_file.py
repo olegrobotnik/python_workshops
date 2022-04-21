@@ -1,8 +1,9 @@
 # Задать список из N элементов, заполненных числами из [-N, N]. Найти произведение элементов на указанных позициях.
 # Позиции хранятся в файле positions.txt в одной строке одно число
 
+import numpy as np
 
-N = abs(int(input('Enter a number from 1 to 9: ')))
+N = abs(int(input('\tEnter a number from 1 to 9: ')))
 # N = 7
 sequence = []
 
@@ -17,7 +18,9 @@ for i in sequence:
 
 file = open('positions.txt', 'w')
 
-positions = [3, 13, 15]
+positions = list(map(int, input('\n\tSelect positions to multiply: ').split()))
+
+# positions = [3, 13, 15]
 for i in positions:
     file.write('%d \n' % i)
 file.close()
@@ -32,10 +35,17 @@ print('\n\tMultiplied positions from .txt file: ')
 for k in pos_list:
     print(f"\t{k}", end=' ')
 
+print()
 selected_list = [sequence[i - 1] for i in pos_list]
+for p in selected_list:
+    print(f"\t{p}", end=' ')
+
 print(f"\n\t{selected_list}")
-result = 1
-for m in selected_list:
-    result = result * m
-print('\tProduct of numbers: ')
-print(f"\t{result}")
+
+# product = 1                       # Цикл умножения
+# for m in selected_list:
+#     product = product * m
+
+print(f"\n\tProduct of numbers: {np.prod(selected_list)}") # Цикл умножения элементов списка с помощью библиотеки numpy
+
+# print(f"\n\tProduct of numbers: {product}")
