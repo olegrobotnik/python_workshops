@@ -8,7 +8,7 @@
 # 12W1B12W3B24W1B14W
 
 
-with open('decoded_string.txt', 'r') as file:
+with open('task_41_decoded_string.txt', 'r') as file:
     decoded_string = file.read()
 
 
@@ -27,7 +27,7 @@ def rle_encode(decoded_string):
     return encoded_string
 
 
-with open('encoded-string.txt', 'w') as file:
+with open('task_41_encoded_string.txt', 'w') as file:
     encoded_string = rle_encode(decoded_string)
     file.write(encoded_string)
 
