@@ -1,5 +1,5 @@
 # Задать список из N элементов, заполненных числами из [-N, N]. Найти произведение элементов на указанных позициях.
-# Позиции хранятся в файле positions.txt в одной строке одно число
+# Позиции хранятся в файле task_17_positions.txt в одной строке одно число
 
 import numpy as np
 
@@ -16,7 +16,7 @@ print('\n\tSequence:')
 for i in sequence:
     print(f"\t{i}", end=' ')
 
-file = open('positions.txt', 'w')
+file = open('task_17_positions.txt', 'w')
 
 positions = list(map(int, input('\n\tSelect positions to multiply: ').split()))
 
@@ -26,7 +26,7 @@ for i in positions:
 file.close()
 
 pos_list = []
-file = open('positions.txt', 'r')
+file = open('task_17_positions.txt', 'r')
 content = file.readlines()
 for line in content:
     pos_list.append(int(line))
