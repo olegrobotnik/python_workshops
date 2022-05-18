@@ -8,10 +8,6 @@
 # 12W1B12W3B24W1B14W
 
 
-with open('task_41_decoded_string.txt', 'r') as file:
-    decoded_string = file.read()
-
-
 def rle_encode(decoded_string):
     encoded_string = ''
     count = 1
@@ -27,11 +23,6 @@ def rle_encode(decoded_string):
     return encoded_string
 
 
-with open('task_41_encoded_string.txt', 'w') as file:
-    encoded_string = rle_encode(decoded_string)
-    file.write(encoded_string)
-
-
 def rle_decode(encoded_string):
     decoded_string = ''
     char_amount = ''
@@ -41,11 +32,22 @@ def rle_decode(encoded_string):
         else:
             decoded_string += encoded_string[i] * int(char_amount)
             char_amount = ''
-    print(decoded_string)
-
     return decoded_string
 
+
+with open('task_41_decoded_string.txt', 'r') as file:
+    decoded_string = file.read()
+
+with open('task_41_encoded_string.txt', 'w') as file:
+    encoded_string = rle_encode(decoded_string)
+    file.write(encoded_string)
 
 print('Decoded string: \t' + decoded_string)
 print('Encoded string: \t' + rle_encode(decoded_string))
 print(f'Compress ratio: \t{round(len(decoded_string) / len(encoded_string), 1)}')
+
+print(rle_decode(encoded_string))
+
+with open('task_41_decoded_string.txt', 'w') as file:
+    decoded_string = rle_decode(encoded_string)
+    file.write(decoded_string)
