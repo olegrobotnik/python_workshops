@@ -46,7 +46,7 @@ print('Decoded string: \t' + decoded_string)
 print('Encoded string: \t' + rle_encode(decoded_string))
 print(f'Compress ratio: \t{round(len(decoded_string) / len(encoded_string), 1)}')
 
-print(rle_decode(encoded_string))
+print('Re-decoded string: \t' + rle_decode(encoded_string))
 
 with open('task_41_decoded_string.txt', 'w') as file:
     decoded_string = rle_decode(encoded_string)
