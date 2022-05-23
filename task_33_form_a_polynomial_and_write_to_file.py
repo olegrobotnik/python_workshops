@@ -34,7 +34,7 @@ def print_polynomial(poly):  # Convert polynomial and write-to-file/print
     # print(f'Converted: \t{poly_list}')
     print(f'Result has been wrote to file: \n{" + ".join(list(reversed(poly_list)))} = 0')
     poly_string = " + ".join(list(reversed(poly_list))) + " = 0"
-    with open('task_33_polinomial.txt', 'w') as file:
+    with open('task_33_polynomial.txt', 'w') as file:
         file.write(poly_string)
 
 
