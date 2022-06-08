@@ -21,10 +21,3 @@ def selection(option_1, option_2):
     print(table.draw())
     user_selection = int(input("Selection: "))
     return user_selection
-
-# option_1 = '1 - print to columns'
-# option_2 = '2 - print to rows'
-
-# option_1 = '1 - record to columns'
-# option_2 = '2 - record to rows'
-# selection(option_1, option_2)
